@@ -1,0 +1,45 @@
+/******************************************************************************
+
+3- A empresa XPTO concedeu um bônus de 20% do valor do salário a todos os funcionários
+com tempo de trabalho na empresa igual ou superior a 5 anos e de 10% e 5% para funcionarios 
+com um ano ou menos.
+Faça um um programa em C que receba o salário e o tempo de serviço de um
+funcionário, calcule e mostre o valor do bônus recebido por ele.
+
+*******************************************************************************/
+#include <stdio.h>
+
+int main()
+{
+   float salario, t, bonus, total;
+   
+   printf("Quanto tempo você trabalha com carteira assinada aqui na empresa? \n 1)Digite 1 para menos de 1 ano: \n 2)Digite 2 para 1 ano ou mais: \n 3)Digite 3 para 5 anos ou mais: \n");
+   scanf("%f", &t);
+   printf("Qual o seu salário ? ");
+   scanf("%f", &salario);
+  
+   
+   if (t == 3){
+        bonus = salario *0.2;
+        total = salario+bonus;
+        printf("Voce receberá acrescimo de 20 por cento no salário, no valor de: R$%.2f, totalizando: R$ %.2f", bonus, total );
+   }
+   else{
+       if (t==2){
+           bonus = salario*0.1;
+            total = salario+bonus;
+            printf("Voce receberá acrescimo de 10 por cento no salário, no valor de:R$ %.2f, totalizando: R$ %.2f", bonus, total );
+       } 
+       else{
+           bonus = salario* 0.05;
+           total = salario+bonus;
+           printf("Voce receberá bônus de 5 por cento do salário, no valor de:R$ %.2f, totalizando: R$ %.2f",bonus, total);
+       }
+   }
+  
+
+
+    return 0;
+}
+
+
