@@ -1,0 +1,22 @@
+//Nesse algoritmo, é feito o calculo para saber se o ano é bissexto ou não e qual foi ou será o próximo
+//In this algorithm the calculation is made to know if the year is leap or not and what was the next one
+
+int main()
+{
+    int ano, proximo;
+    printf("Digite o ano para saber se é bissexto:");//enter a year to find out if it's leap
+    scanf("%i", &ano);
+    
+    
+    if(ano %4 == 0 && (ano % 400 == 0 || ano %100 != 0)){
+        proximo = ano + 4;
+        printf("É um ano bissexto!\nO próximo ano será em %i", proximo); //It's a leap year and the next one is %i
+    }else{
+        proximo = (4 - (ano % 4))+ ano;
+        printf("NÃO é um ano bissexto!\nO proximo ano será em %i", proximo);//It's not a leap year and the next one is %i
+    }
+    
+    return 0;
+
+}
+
