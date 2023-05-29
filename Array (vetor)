@@ -1,0 +1,31 @@
+/******************************************************************************
+Faça um algoritmo que armazene um vetor de inteiros de 20 posições,
+identifique o percentual de números impares e de números pares informados.
+*******************************************************************************/
+#include <stdio.h>
+
+int main()
+{
+    int num[20]; //vetor que armazena 20 posições
+    int x, par, impar;
+    
+    //Laço for
+    for (x=1 ; x<=20; x++){
+        printf("Coloque um número: ");
+        scanf("%i", &num[x]);
+        
+        if (num[x] % 2 == 0){
+            par+=1;
+        }else{
+            impar+=1;
+        }
+    }
+    
+    par= (par*100)/20;
+    impar = (impar*100)/20;
+
+    printf("O percentual de números pares é %.1i %%\n", par);
+    printf("O percentual de números impares é %.1i %%", impar);
+    
+    return 0;
+}
