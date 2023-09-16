@@ -1,0 +1,41 @@
+Quando coloca dois ou mais comandos dentro do if, é necessário utilizar as chaves {}
+
+fgets é usado para ler coisas além do teclado, ele pode ler outros dispositivos como por exemplo, arquivos no
+disco.
+
+Recursividade é uma função chamando ela mesma
+Ex:	
+
+#include <stdio.h>
+void bomba(int n)
+{   if(n>0)
+    {   printf("%d\n", n);
+        bomba(n-1);
+    }
+    else printf("Boooooomm\n");
+
+}
+
+
+int main()
+{
+    bomba(10);
+
+    return 0;
+}
+Nesse exemplo, paramos a recursividade pelo uso do if/else
+
+#include <stdio.h>
+void faixa(int inicio, int fim)
+{   if(inicio <= fim)
+    {   printf("%d\n", inicio);
+        faixa(++inicio, fim); // faixa(inicio+1, fim)
+    }
+}
+
+
+int main()
+{
+    faixa(1, 10);
+    return 0;
+}
