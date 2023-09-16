@@ -1,3 +1,4 @@
+Overflow é a sobrecarga que há na pilha
 Registradores são espaços curtos de memória que são rapidas
 
 Quando temos uma quantidade limitada de bits para fazer uma operação matemática, como por exemplo, uma soma e 
