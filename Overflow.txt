@@ -1,0 +1,10 @@
+Registradores são espaços curtos de memória que são rapidas
+
+Quando temos uma quantidade limitada de bits para fazer uma operação matemática, como por exemplo, uma soma e 
+essa soma excede essa quantidade de bits, acontece o OVERFLOW. No qual a conta não é executada de forma correta
+e assim, é acionado a FLAG que avisa sobre o erro
+
+Por exemplo, suponha que eu tenha 4 bits e a soma passe de 4 bits
+Somando 1 ao 7 deveria dar 8, porém o número 8 não pode ser representado por 4 bits, então fica como -7
+0111 = 7 
+1000 = -7
