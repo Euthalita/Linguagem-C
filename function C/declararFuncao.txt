@@ -12,6 +12,6 @@ Chamando a função:
 
 int main(void){
  float area = areaQuadrado(float 10, float 10);
- printf(area);
+ printf("%f", area);
 
 }
