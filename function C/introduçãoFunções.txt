@@ -32,3 +32,5 @@ int main(){
 
 Por motivos de organização, o certo é sempre declarar a função, visto que, geralmente
 as funções ficam em outras pastas.
+
+Obs: Quando a função não retorna valor, usa-se o void
