@@ -1,0 +1,17 @@
+Para declarar uma função, é necessário indicar primeiro qual será o tipo de valor que
+ela retornará, em seguida vem o nome e os valores que ela receberá.
+Exemplo:
+
+float areaQuadrado(float x, float y){
+  float area = x*y;
+  
+  return area;
+}
+
+Chamando a função:
+
+int main(void){
+ float area = areaQuadrado(float 10, float 10);
+ printf(area);
+
+}
