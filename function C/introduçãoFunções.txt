@@ -1,0 +1,34 @@
+Na linguagem C é sempre necessário declarar uma função, caso ela esteja depois da
+função main.
+Por exemplo, suponha que eu tenha uma função chamada "dia" e ela esteja em outra pasta
+ou abaixo da função main e eu queira chama-la sem declara-la
+
+int main(){
+  dia();
+}
+
+void dia(){
+  printf("Bom dia");
+}
+
+No exemplo acima, ocorrerá um erro, visto que, a função não foi declarada. Veja abaixo, 
+a forma correta para declarar chamar uma função
+
+int main(){
+  void dia(void);
+  dia();
+}
+
+Caso a função esteja antes do main, não é necessário declarar
+Exemplo:
+
+void dia(){
+  printf("Bom dia");
+}
+
+int main(){
+  dia();
+}
+
+Por motivos de organização, o certo é sempre declarar a função, visto que, geralmente
+as funções ficam em outras pastas.
