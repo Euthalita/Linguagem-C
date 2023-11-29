@@ -1,0 +1,20 @@
+Diferente dos vetores, nas estruturas nos podemos declarar diversos tipos de
+variáveis. É uma alternativa ao vetor, visto que, em C não é possivel armazenar diferentes 
+valores no vetor.
+	struct horario {
+	   int horas;
+	   str dia;
+	};
+
+Colocamos o struct e o nome da estrutura, no caso acima, horario.
+
+Para chamar uma struct, e poder atribuir valores, é necessário criar uma variável 
+para essa estrutura, no exemplo, receberá o nome de data.
+	struct horario data;
+
+Para atribuir valores:
+	data.horas = 15;
+	data.dia = "Quarta-feira";
+
+Podemos manipular as variáveis. Ex: 
+	struct horario ano;
