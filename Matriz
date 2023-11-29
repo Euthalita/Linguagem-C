@@ -1,0 +1,26 @@
+#include <stdio.h>
+
+int main(void) {
+  int A, B, i, j;
+  printf("Coloque um número de linhas para a matriz: ");
+  scanf("%i", &A);
+  printf("Coloque um número de colunas para a matriz: ");
+  scanf("%d", &B);
+
+  int matriz[A][B];
+
+  for(i=0; i<A; i++){
+    for(j=0; j<B; j++){
+      printf("Escreva o numero da %dº linha:", i+1);
+      scanf("%d", &matriz[i][j]);
+    }
+  }
+  for(i=0; i<A; i++){
+    printf("[");
+    for(j=0; j<B; j++){
+      printf(" %d ", matriz[i][j]); 
+    }
+    printf("]\n");
+  }  
+  return 0;
+}
