@@ -1,4 +1,5 @@
 Tad é um dado abstrato
+
 Para criar um dado abstrato, utiliza o typedef 
 Exemplo:
 enum DiaSemana {Domingo, segunda, terça= 5, quarta, quinta, sexta =13, sabado};
@@ -12,6 +13,7 @@ Minha_variavel = segunda;
 Como se o diasemana fosse um int, por exemplo, mas é um tipo abstrato.
 
 Podemos criar um tipo abstrato usando struct também e há duas formas, uma forma mais simplificada e outra mais complexa.
+
 Exemplo simplificado:
 typedef struct {
       int ra;
@@ -30,5 +32,8 @@ O struct vira do tipo aluno e podemos criar como se fosse um objeto, chamando a 
    aluno maria;
    maria.ra = 726363828;
   scanf("%i", & joao.ra);
+
+Qual a diferença de struct e typedef struct?
+ - A principal vantagem é que da para usar dentro de outras estruturas, diferentemente, se fosse só structs, visto que, nao é possivel fazer o mesmo
 
 
