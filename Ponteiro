@@ -1,0 +1,16 @@
+Para acessar o endereço da memoria, utiliza-se o &. 
+Exemplo:
+ int x = 10;
+ printf("%i", &x);
+
+O ponteiro funciona como apontador, então eu simbolizo para o que ele ira apontar.
+No exemplo, ele aponta para o valor inteiro para um endereço de memoria
+ int *ponteiro;
+ ponteiro = &x;
+ printf("%i", *ponteiro);
+ printf("%i", ponteiro);
+
+Atençao!!!
+Com o asterisco ele aponta para o valor e sem o asterisco ele aponta para o endereço de memoria
+Com asterisco = valor da memoria
+Sem asterisco = endereço da memoria
