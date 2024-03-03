@@ -34,6 +34,6 @@ O struct vira do tipo aluno e podemos criar como se fosse um objeto, chamando a 
   scanf("%i", & joao.ra);
 
 Qual a diferença de struct e typedef struct?
- - A principal vantagem é que da para usar dentro de outras estruturas, diferentemente, se fosse só structs, visto que, nao é possivel fazer o mesmo
+ - A principal vantagem é que da para usar dentro de outras estruturas, diferentemente, se fosse só structs, visto que, nao é possivel fazer o mesmo, sendo assim, é simplificado varias linhas de código.
 
 
