@@ -1,0 +1,19 @@
+#include <stdio.h>
+typedef struct Tipo_endereco{
+char rua[50];
+int num;
+}Endereco;
+
+typedef struct Tipo_pessoa{
+char nome[50];
+int idade;
+Endereco endereco;//É do tipo Endereço
+}Pessoa;
+
+int main(void) {
+   Pessoa joao;
+  joao.idade= 15;
+  joao.endereco.num=123;//um dado abstrato dentro do outro, é chamado como se fosse uma arvore genealogica
+  printf("Endereço%d", joao.endereco.num);
+  return 0;
+}
