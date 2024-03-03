@@ -1,0 +1,34 @@
+Tad é um dado abstrato
+Para criar um dado abstrato, utiliza o typedef 
+Exemplo:
+enum DiaSemana {Domingo, segunda, terça= 5, quarta, quinta, sexta =13, sabado};
+typedef enum DiaSemana diasemana;
+
+O dado diasemana é um dado abstrato, então podemos criar uma variável com esse dado
+
+diasemana Minha_variavel;
+Minha_variavel = segunda;
+
+Como se o diasemana fosse um int, por exemplo, mas é um tipo abstrato.
+
+Podemos criar um tipo abstrato usando struct também e há duas formas, uma forma mais simplificada e outra mais complexa.
+Exemplo simplificado:
+typedef struct {
+      int ra;
+      char nome[50];
+}aluno;
+
+Forma complexa:
+struct Tipo_Aluno{
+      int ra;
+      char nome[50];
+}
+typedef struct Tipo_Aluno aluno;
+
+O struct vira do tipo aluno e podemos criar como se fosse um objeto, chamando a struct
+   aluno joao;
+   aluno maria;
+   maria.ra = 726363828;
+  scanf("%i", & joao.ra);
+
+
